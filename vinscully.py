@@ -54,6 +54,15 @@ def isGameStarting(nextGameTime, nextGame):
 	if currentTimeFormatted == nextGameTimeFormatted:
 		print "IT'S TIME FOR DODGER BASEBALL!!!!!!!"
 
+		try:
+			import pygame
+			pygame.mixer.init()
+			pygame.mixer.music.load('audio1.mp3')
+			pygame.mixer.music.play()
+
+		except ImportError:
+			pass
+
 		timer.cancel()
 
 		nextGameTime, nextGame = getNextGame()
