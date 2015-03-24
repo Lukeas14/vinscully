@@ -23,7 +23,11 @@ A Raspberry Pi / Python app that will play Vin Scully's "It's time for Dodger Ba
   sudo pip install pytz
   ```
   
-4. Run program
+4. Make sure your audio is set to the correct output (HDMI or 3.5mm jack).
+  
+  Follow the instructions here: http://www.raspberrypi.org/documentation/configuration/audio-config.md
+
+5. Run program
 
   ```
   python vinscully.py
