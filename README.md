@@ -3,17 +3,28 @@ A Raspberry Pi / Python app that will play Vin Scully's "It's time for Dodger Ba
 
 # Get Started
 
-1. Install pip
+1. Clone repository
+  
+  ```
+  cd ~/
+  git clone https://github.com/Lukeas14/vinscully.git
+  cd vinscully
+  ```
+
+2. Install pip
   
   ```
   sudo apt-get install python-pip
   ````
 
-2. Clone repository
+3. Install Python package pytz
+ 
+  ```
+  sudo pip install pytz
+  ```
   
-  ```
-  cd ~/
-  git clone https://github.com/Lukeas14/vinscully.git
-  ```
+4. Run program
 
-3. 
+  ```
+  python vinscully.py
+  ```
